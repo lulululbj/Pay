@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorSurfaceContainerLow"
+            app:title="@string/app_name"
+            app:menu="@menu/menu_setting"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <luyao.ktx.view.SettingView
+        android:id="@+id/defaultCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:settingText="默认货币"
+        app:settingIcon="@drawable/ic_currency"
+        app:settingPosition="single"/>
+
+    <luyao.ktx.view.SettingView
+        android:id="@+id/backup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="20dp"
+        app:settingIcon="@drawable/ic_cloud_upload"
+        app:settingPosition="top"
+        app:settingText="数据备份和恢复" />
+
+    <luyao.ktx.view.SettingView
+        android:id="@+id/jumpStore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        app:settingIcon="@drawable/ic_star"
+        app:settingPosition="middle"
+        app:settingText="给个好评" />
+
+    <luyao.ktx.view.SettingView
+        android:id="@+id/share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        app:settingIcon="@drawable/ic_share"
+        app:settingPosition="middle"
+        app:settingText="推荐给朋友" />
+
+    <luyao.ktx.view.SettingView
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        app:settingIcon="@drawable/ic_about"
+        app:settingPosition="bottom"
+        app:settingText="关于应用" />
+
+</LinearLayout>

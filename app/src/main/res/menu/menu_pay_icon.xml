@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_from_album"
+        android:title="@string/album" />
+
+    <item
+        android:id="@+id/action_from_apps"
+        android:title="@string/installed_app" />
+</menu>

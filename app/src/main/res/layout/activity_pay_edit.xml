@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Pay_Bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/titleLayout"
+        layout="@layout/title_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/payIcon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/luyao"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/nameCard"
+                style="@style/Input_CardView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/payIcon">
+
+                <LinearLayout style="@style/Input_LinerLayout">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/PayName"
+                        android:text="@string/pay_name" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/nameInput"
+                        style="@style/PayInput"
+                        android:hint="@string/custom" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/priceCard"
+                style="@style/Input_CardView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/nameCard">
+
+                <LinearLayout style="@style/Input_LinerLayout">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/PayName"
+                        android:text="@string/pay_price" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/priceInput"
+                        style="@style/PayInput"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/periodCard"
+                style="@style/Input_CardView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/priceCard">
+
+                <LinearLayout style="@style/Input_LinerLayout">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/PayName"
+                        android:text="@string/pay_period" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/periodInput"
+                        style="@style/PayInput"
+                        android:hint="@string/pay_period_hint" />
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/dateCard"
+                style="@style/Input_CardView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/periodCard">
+
+                <LinearLayout style="@style/Input_LinerLayout">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/PayName"
+                        android:text="@string/start_date" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/dateInput"
+                        style="@style/PayInput"
+                        android:hint="@string/start_date_hint" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/remarkCard"
+                style="@style/Input_CardView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dateCard">
+
+                <LinearLayout style="@style/Input_LinerLayout">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/PayName"
+                        android:text="@string/remark" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/remarkInput"
+                        style="@style/PayInput"
+                        android:hint="@string/remark_hint" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

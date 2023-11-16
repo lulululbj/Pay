@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="night_mode">
+        <item>@string/mode_light</item>
+        <item>@string/mode_night</item>
+        <item>@string/mode_system</item>
+    </string-array>
+</resources>

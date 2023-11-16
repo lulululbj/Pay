@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_single_setting">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalGuide1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalGuide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalGuide3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalGuide4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1" />
+
+    <TextView
+        android:id="@+id/startDateTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingVertical="16dp"
+        android:gravity="center"
+        android:textColor="@color/color_333333"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuide1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="2023-09-04" />
+
+    <TextView
+        android:id="@+id/endDateTv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="@color/color_333333"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@id/startDateTv"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuide2"
+        app:layout_constraintStart_toStartOf="@id/verticalGuide1"
+        app:layout_constraintTop_toTopOf="@id/startDateTv"
+        tools:text="2023-09-04" />
+
+    <TextView
+        android:id="@+id/periodTv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="@color/color_333333"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@id/startDateTv"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuide3"
+        app:layout_constraintStart_toStartOf="@id/verticalGuide2"
+        app:layout_constraintTop_toTopOf="@id/startDateTv"
+        tools:text="1年" />
+
+    <TextView
+        android:id="@+id/priceTv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textColor="@color/color_333333"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@id/startDateTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/verticalGuide3"
+        app:layout_constraintTop_toTopOf="@id/startDateTv"
+        tools:text="¥99" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
