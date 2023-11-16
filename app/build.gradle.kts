@@ -101,7 +101,8 @@ android {
 
 dependencies {
 
-    implementation(project(":luyao_ktx"))
+    implementation("com.github.lulululbj:ktx:0.0.3")
+//    implementation(project(":luyao_ktx"))
 
     val composeBom = platform("androidx.compose:compose-bom:2023.10.01")
     implementation(composeBom)

@@ -16,5 +16,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "Pay"
 include(":app")
-include(":luyao_ktx")
-//project(":luyao_ktx").projectDir = File(settingsDir, "../Everywhere/luyao_ktx")
